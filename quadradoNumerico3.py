@@ -5,32 +5,31 @@
 n = 5
 12345
 22345
-22245
-22225
+33345
+44445
+55555
 '''
 
-n = int(input())
-i = 1
-linha = 1
-numFinal = n
-cnt = 0
-while linha <= n:
-     
-    while i <= numFinal: 
-    
-        
-        while cnt < linha:
-            #print(f'linha do cnt')
-            print(linha, end ='') #aqui vai alterar
-            cnt += 1
-            i += 1
-        if i <= numFinal:
-            print(i, end = '')
-        i += 1
-        
-    cnt = 0
-    print()
-    i = 1
-    linha += 1
-    
+linhaFinal = int(input())
+linhaAtual = 1
+numFinal = linhaFinal
 
+while linhaAtual <= linhaFinal:
+    
+    numAtual = 1
+    cnt = 1
+    
+    while numAtual <= numFinal:
+            
+        
+        while cnt <= linhaAtual:
+            print(linhaAtual, end='')
+            cnt += 1
+            numAtual += 1
+            
+        if numAtual <= numFinal:
+            print(numAtual, end='')
+        numAtual += 1 
+    
+    print()
+    linhaAtual += 1
